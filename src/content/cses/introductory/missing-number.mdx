@@ -1,0 +1,45 @@
+---
+time: 1742106767414
+---
+
+## Explanation
+
+[Problem](https://cses.fi/problemset/task/1083)
+
+We have `1 + 2 + 3 + .... + n = n * (n + 1) / 2`
+
+Let x is the missing number, then
+`x = n * (n + 1) / 2 - (1 + 2 + 3 + ... + (x - 1) + (x + 1) + ... + n)`
+
+Ths, the answer is `n * (n + 1) / 2` - sum of all existing numbers
+## Code
+
+<CodeTabs langs={["Python", "C++"]}>
+
+```python
+n = int(input())
+numbers = list(map(int, input().split()))
+
+print((n * (n + 1) >> 1) - sum(numbers))
+```
+
+```cpp
+#include <iostream>
+
+int main() {
+    long long n;
+    std::cin >> n;
+
+    long long sum = n * (n + 1) >> 1;
+
+    while(n > 1 && n--) {
+        int x; 
+        std::cin >> x;
+        sum -= x;
+    }
+
+    std::cout << sum;
+}
+```
+
+</CodeTabs>

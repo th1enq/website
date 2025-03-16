@@ -34,7 +34,7 @@ export const HeroSection = () => {
           className="flex gap-4 justify-center"
         >
           <motion.a
-            href="mailto:hello@nirlep.dev"
+            href="mailto:thienchy3305@gmail.com"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200"

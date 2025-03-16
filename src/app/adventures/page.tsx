@@ -9,7 +9,7 @@ export default async function Adventures() {
   const adventures = [
     {
       title: "CSES Problem Set",
-      date: "2023 - Present",
+      date: "2025 - Present",
       description:
         "My journey through the CSES Problem Set - a collection of competitive programming problems. This is a long-term adventure where I solve algorithmic problems, learn new concepts, and improve my problem-solving skills.",
       progress: csesStats.progress,
@@ -21,7 +21,7 @@ export default async function Adventures() {
         "Mathematics",
         "String Algorithms",
       ],
-      link: "https://cses.fi/user/151151/",
+      link: "https://cses.fi/problemset/user/320719/",
     },
   ];
 

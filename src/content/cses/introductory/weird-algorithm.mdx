@@ -1,0 +1,44 @@
+---
+time: 1742105945892
+---
+
+## Explanation
+
+[Problem](https://cses.fi/problemset/task/1068/)
+
+Just use a loop and follow these statements:
+
+- If `n` is even: `n = n / 2`
+- If `n` is odd: `n = n * 3 + 1`
+
+Be careful, n should be of type long long.
+## Code
+
+<CodeTabs langs={["Python", "C++"]}>
+
+```python
+n = int(input())
+
+while n > 1:
+    print(n, end=" ")
+    n = (n * 3 + 1) if n % 2 else n // 2
+
+print(1)
+```
+
+```cpp
+#include <iostream>
+
+int main() {
+    long long n;
+    std::cin >> n;
+
+    while (n > 1) {
+        std::cout << n << " ";
+        n = (n & 1) ? (n * 3 + 1) : (n / 2);
+    }
+    std::cout << 1;
+}
+```
+
+</CodeTabs>
