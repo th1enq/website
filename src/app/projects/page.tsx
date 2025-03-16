@@ -19,102 +19,43 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "MashCode",
-      description: "Competitive programming platform, focused on LIVE 1v1s.",
+      title: "Adventure Time",
+      description: "2D Indie Game built with SDL2 and C++.",
       tags: [
-        "ReactJS",
-        "TailwindCSS",
-        "Python",
-        "FastAPI",
-        "PostgreSQL",
-        "Websockets",
-        "Docker",
+        "SDL2",
+        "C++",
       ],
-      github: "https://github.com/nirlep5252/mashcode",
+      github: "https://github.com/th1enq/Adventure-Time",
     },
     {
-      title: "Brilliant++",
-      description: "AI powered education platform.",
+      title: "Library Management System",
+      description: "A simple library management system built with JavaFX.",
       tags: [
-        "NextJS",
-        "TypeScript",
-        "PostgreSQL",
-        "Prisma",
-        "tRPC",
-        "TailwindCSS",
-        "Gemini",
-        "Cloudinary",
-        "Docker",
+        "Java",
+        "JavaFX",
+        "MySQL",
+        "Google Books API",
       ],
-      github: "https://github.com/nirlep5252/brilliant-plus-plus",
+      github: "https://github.com/th1enq/Library-Management-System-JAVA",
     },
     {
-      title: "EpicBot",
-      description: "A simple, multipurpose Discord bot.",
-      tags: ["Python", "discord.py", "MongoDB", "Chatbot", "Pillow"],
-      github: "https://github.com/nirlep5252/epicbot",
+      title: "CatShell",
+      description: "A simple shell built with Golang and C",
+      tags: ["Golang", "C"],
+      github: "https://github.com/th1enq/CatShell",
     },
     {
-      title: "Codeforces CLI",
+      title: "GoVibe",
       description:
-        "A simple CLI tool to enhance your competitive programming workflow.",
-      tags: ["Python", "CLI", "Codeforces", "Web Scraping"],
-      github: "https://github.com/nirlep5252/codeforces-cli",
+        "A simple social network built with Golang",
+      tags: ["Golang", "Docker", "PostgreSQL", "TailwindCSS", "ReactJS"],
+      github: "https://github.com/th1enq/GoVibe",
     },
     {
-      title: "Fun",
-      description:
-        "A funny little interpreted programming language heavily inspired by Lox.",
-      tags: ["Java", "Interpreter", "Lox"],
-      github: "https://github.com/nirlep5252/fun",
-    },
-    {
-      title: "Portfolio",
-      description: "My personal website, built with NextJS and TailwindCSS.",
-      tags: ["NextJS", "TailwindCSS"],
-      github: "https://github.com/nirlep5252/website",
-      preview: "https://nirlep.dev",
-    },
-    {
-      title: "Thoughtful Threads",
-      description: "A simple blog website, built with NextJS and TailwindCSS.",
-      tags: ["NextJS", "Prisma", "AuthJS", "PostgreSQL", "TailwindCSS"],
-      github: "https://github.com/nirlep5252/thoughtful-threads",
-      preview: "https://thoughtful-threads.vercel.app/",
-    },
-    {
-      title: "URL Shortener API",
-      description: "A Simple basic URL shortener API.",
-      tags: ["Python", "FastAPI", "PostgreSQL"],
-      github: "https://github.com/Nirlep5252/url-shortener-api",
-    },
-    {
-      title: "Doggytype",
-      description:
-        "A typing test terminal application inspired from Monkeytype.",
-      tags: ["Rust", "CLI"],
-      github: "https://github.com/nirlep5252/doggytype",
-    },
-    {
-      title: "EpicShot",
-      description: "A screenshot tool for Linux, built with Rust.",
-      tags: ["Rust", "XCB", "X11", "Linux"],
-      github: "https://github.com/nirlep5252/epicshot",
-    },
-    {
-      title: "EpicBot Images",
-      description:
-        "A Python module that creates memes and several cool effects from images.",
-      tags: ["Python", "Pillow", "Wand"],
-      github: "https://github.com/nirlep5252/epicbot-images",
-    },
-    {
-      title: "Scheduling Algos",
-      description:
-        "A simple web app to visualize various scheduling algorithms.",
-      tags: ["ReactJS"],
-      github: "https://github.com/nirlep5252/scheduling-algos",
-      preview: "https://scheduling.nirlep.dev",
+      title: "dotfiles",
+      description: "My personal dotfiles configuration for Arch Linux using bspwm.",
+      tags: ["Shell", "Python", "Lua", "Javascript", "SCSS"],
+      github: "https://github.com/th1enq/dotfiles",
     },
   ];
 
@@ -243,7 +184,7 @@ export default function Projects() {
                         </svg>
                       </a>
                     )}
-                    {project.preview && (
+                    {/* {project.preview && (
                       <a
                         href={project.preview}
                         target="_blank"
@@ -265,7 +206,7 @@ export default function Projects() {
                           />
                         </svg>
                       </a>
-                    )}
+                    )} */}
                   </div>
                 </motion.div>
                 <motion.p

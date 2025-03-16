@@ -13,13 +13,13 @@ const AnimatedName = () => {
       <Suspense
         fallback={
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#93C5FD] to-[#C4B5FD]">
-            Nirlep Gohil
+            Th1enq
           </span>
         }
       >
         <Sparkles>
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#93C5FD] to-[#C4B5FD]">
-            Nirlep Gohil
+            Th1enq
           </span>
         </Sparkles>
       </Suspense>

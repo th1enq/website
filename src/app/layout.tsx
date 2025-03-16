@@ -8,11 +8,11 @@ import AnimatedBackground from "./components/AnimatedBackground";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nirlep Gohil - Developer Portfolio",
+  title: "Th1enq - Personal website",
   description:
-    "Full-stack developer and open source enthusiast. Building modern web applications and sharing knowledge through code.",
-  authors: [{ name: "Nirlep Gohil", url: "https://github.com/nirlep5252" }],
-  creator: "Nirlep Gohil",
+    "Competitive Programmer and open source enthusiast. Building modern web applications and sharing knowledge through code.",
+  authors: [{ name: "Th1enq", url: "https://github.com/nirlep5252" }],
+  creator: "Th1enq",
 };
 
 export default function RootLayout({

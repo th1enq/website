@@ -44,13 +44,11 @@ export const AboutSection = ({ recentPosts }: AboutSectionProps) => {
               </div>
               <div>
                 <h3 className="font-semibold text-xl mb-2">
-                  Passionate Developer
+                  Competitive Programmer
                 </h3>
                 <p className="text-gray-300 leading-relaxed">
-                  I&apos;m a passionate developer who loves creating beautiful
-                  and functional web experiences. With expertise in modern web
-                  technologies, I bring ideas to life through clean code and
-                  intuitive design.
+                  I&apos;m a competitive programmer who solving problems
+                  and participating in coding contests.
                 </p>
               </div>
             </div>

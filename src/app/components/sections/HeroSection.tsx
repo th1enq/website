@@ -24,7 +24,7 @@ export const HeroSection = () => {
         >
           <AnimatedName />
           <p className="text-2xl text-gray-300">
-            Full-stack developer and open source enthusiast.
+            Competitive programmer and open source enthusiast.
           </p>
         </motion.div>
         <motion.div

@@ -19,21 +19,21 @@ export const SkillsSection = () => {
         title="Backend Development"
         color="text-purple-400"
         gradientColor="from-purple-400 to-purple-600"
-        skills={["Python", "Rust", "Go", "NodeJS", "PostgreSQL", "Docker"]}
+        skills={[ "Python", "Golang", "NodeJS", "PostgreSQL", "Docker"]}
       />
       <SkillCard
         icon={Terminal}
         title="Languages"
         color="text-green-400"
         gradientColor="from-green-400 to-green-600"
-        skills={["Rust", "Python", "Go", "C", "C++", "Java", "SQL"]}
+        skills={["Python", "Golang", "C", "C++", "Java", "SQL"]}
       />
       <SkillCard
         icon={Rocket}
         title="Interests"
         color="text-orange-400"
         gradientColor="from-orange-400 to-orange-600"
-        skills={["System Design", "Open Source", "Competitive Programming"]}
+        skills={["Open Source", "Competitive Programming", "You"]}
       />
     </>
   );

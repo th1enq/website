@@ -1,0 +1,102 @@
+---
+title: "Viettel Cyber Security Passport #2"
+date: "2025-01-25"
+description: "My journey at Viettel Cyber Security Passport Selection rounds part 2"
+tags: ["Viettel", "Interview", "Backend", "Security"]
+---
+
+## Summary
+
+Continuing from the first part. In part 2, I will recount my experience participating in the competitive programming contest and solving the set of problems that day.
+
+## Fun fact
+
+The competition lasted 2 hours and consisted of 4 problems in the ICPC format (results were only accepted if all test cases passed).
+That day, due to a clash with my semester exam schedule at school, I only completed 3 out of 4 problems before requesting to leave early to make it in time for the exam. However, I still remember the problems and the solutions for each one.
+
+## Problem 1:
+
+### Statement:
+
+Given a string of operations L, R, U, D remove as many operations as possible so that the direction of movement does not change. Output the length of the remaining string.
+
+### Constraints:
+
+`1 <= |s| <= 10^5`
+
+### Solution:
+
+This is a relatively easy problem, designed for scoring. It can be observed that the L operations will cancel out the R operations, and similarly, the D operations will cancel out the U operations, and vice versa. Therefore, the solution to the problem is:
+
+`|s| - 2 x min(cntL, cntR) - 2 x min(cntD, cntU)`
+
+where `cntL`, `cntR`, `cntD`, and `cntU` are the number of L, R, D, U operations respectively.
+
+## Problem 2:
+
+### Statement:
+
+Given an array of `n` elements and `S`. Count the number of triples `a[i]`, `a[j]`, `a[k]` such that:
+
+`i < j < k && a[i] + a[j] + a[k] < S`
+
+### Constraints:
+
+` 1 <= n <= 10^3, `
+` 1 <= a[i], S <= 10^9 `
+
+### Solution:
+
+This is a classic problem that can be solved using the two-pointer technique. The idea is to sort the array and use two pointers to iterate through the array.
+
+Fixed the `i` and `j` pointers, we can find the maximum value of `k` such that `a[i] + a[j] + a[k] < S` by two-pointer technique. The solution to the problem is the sum of the number of valid `k` for each pair of `i` and `j`.
+
+The time complexity of this solution is `O(n^2)`.
+
+## Problem 3:
+
+Given an array of `n` elements, consider all subsets of size `k` such that no two elements in the subset are consecutive. The value of a subset is the largest element in the subset. Find the smallest value among all subsets.
+
+### Constraints:
+
+`` 1 <= n, k <= 10^5, ``
+`` 1 <= a[i] <= 10^9 ``
+
+### Solution:
+
+If `n * k` is small, we can think of using dynamic programming to solve the problem. However, in this case, since `n * k` is too large, we cannot use this approach.
+
+Let `f(x)` be the maximum number of elements in the set have a value greater than or equal `x`. It can be easily checked and proven that if `a < b`, then `f(a) >= f(b)`. Therefore, we can use binary search to find the smallest value of `x` such that `f(x) >= k`.
+
+So, we can use binary search to find the smallest value of `x` such that `f(x) >= k`. To check if `f(x) >= k`, we can use the dynamic programming.
+
+Let `dp[i]` be the maximum number of elements in the set have a value greater than or equal `x` and the last element in the set is `a[i]`:
+
+`dp[i] = max(dp[j] + 1) (1 <= j < i - 1)`
+The time complexity of this dynamic programming is `O(n^2)`. But we can optimize it to `O(n)` by using maximum prefix sum.
+
+So, the time complexity of this solution is `O(n*log(a[i]))`.
+
+## Problem 4:
+
+Given a string `s` of length `n`. One operation you can delete a substring have the same character. Find the minimum number of operations to make the string empty.
+
+### Constraints:
+
+`1 <= |s| <= 500`
+
+### Solution:
+
+This is a classic problem that can be solved using dynamic programming.
+
+Let `dp[i][j]` be the minimum number of operations to make the substring `s[i]` to `s[j]` empty. We can easily see that:
+
+`dp[i][j] = 1 + dp[i + 1][j]`
+
+`dp[i][j] = min(dp[i + 1][k - 1] + dp[k][j]) (s[i] = s[k])`
+
+The time complexity of this solution is `O(n^3)`.
+
+## Conclusion:
+
+The exam itself was not difficult. Completing 2-3 problems was very easy. It's a pity I didn't have time to complete all 4 problems. However, this part of the exam was more about passing or failing, and wasn't graded. The final evaluation relied entirely on the extremely stressful interview! In the next part, I will share the interviewer as well as the common questions recruiters often ask interviewee. See you soon.
