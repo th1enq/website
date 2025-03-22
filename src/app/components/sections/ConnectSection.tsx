@@ -165,7 +165,7 @@ export const ConnectSection = () => {
               </motion.div>
             </a>
             <a
-              href="https://twitter.com/nirlep_5252_"
+              href="https://www.instagram.com/th1enq.__/"
               target="_blank"
               rel="noopener noreferrer"
             >

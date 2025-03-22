@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Th1enq - Personal website",
   description:
     "Competitive Programmer and open source enthusiast. Building modern web applications and sharing knowledge through code.",
-  authors: [{ name: "Th1enq", url: "https://github.com/nirlep5252" }],
+  authors: [{ name: "Th1enq", url: "https://github.com/th1enq" }],
   creator: "Th1enq",
 };
 

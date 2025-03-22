@@ -23,6 +23,22 @@ export default async function Adventures() {
       ],
       link: "https://cses.fi/problemset/user/320719/",
     },
+    {
+      title: "LeetCode",
+      date: "2025 - Present",
+      description:
+        "My journey through LeetCode - a platform for preparing technical coding interviews. I solve algorithmic problems, learn new concepts, and improve my problem-solving skills.",
+      progress: csesStats.progress,
+      solvedPercentage: 0,
+      tags: [
+        "Array",
+        "String",
+        "Linked List",
+        "Binary Tree",
+        "Dynamic Programming",
+      ],
+      link: "https://leetcode.com/rohan_shakya/",
+    },
   ];
 
   return (

@@ -31,6 +31,9 @@ export function AdventureCard({ adventure }: { adventure: Adventure }) {
     if (adventure.title === "CSES Problem Set") {
       router.push("/adventures/cses");
     }
+    if (adventure.title === "LeetCode") {
+      router.push("/adventures/cses");
+    }
   };
 
   return (
